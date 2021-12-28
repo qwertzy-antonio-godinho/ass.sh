@@ -183,6 +183,7 @@ function configure_system () {
     printf "\nConfiguring system...\n"
     sudo cp -r -v "${PROJECT_ROOT}"/etc/* /etc/
     sudo cp -r -v "${PROJECT_ROOT}"/usr/* /usr/
+	sudo cp -r -v "${PROJECT_ROOT}"/boot/* /boot/
     sudo systemctl enable xdm
     sudo systemctl enable bluetooth
     sudo systemctl enable ufw
