@@ -201,10 +201,8 @@ function configure_user () {
     systemctl --user start pulseaudio
     pactl set-sink-mute @DEFAULT_SINK@ toggle
     pactl -- set-sink-volume @DEFAULT_SINK@ 80%
-    #ssh-agent -c
-	systemctl --user enable gpg-agent.socket 
+    eval $(ssh-agent) 
     ssh-add /backup/.keys/qwertzy-antonio-godinho-github.com
-    mkdir -p ~/.wine
 }
 
 function cleanup () {
@@ -218,8 +216,8 @@ printf "\n${SCRIPT_NAME} - Automated System Setup\n"
 check_previleges
 update_system
 process_pacman
-install_yay
-process_abs
+#install_yay
+#process_abs
 configure_system
 configure_user
 cleanup
