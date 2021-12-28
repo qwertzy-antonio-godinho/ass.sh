@@ -85,6 +85,7 @@ declare -a PACKAGES=(
 	"qemu"
 	"qemu-arch-extra"
 	"qt5ct"
+	"qtcurve-qt5"
 	"redshift"
 	"ripgrep"
 	"rofi"
