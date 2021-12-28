@@ -25,6 +25,7 @@ declare -a PACKAGES=(
 	"engrampa"
 	"eom"
 	"ffmpegthumbnailer"
+	"flameshot"
 	"fluidsynth"
 	"fluxbox"
 	"fzf"
@@ -69,6 +70,7 @@ declare -a PACKAGES=(
 	"opusfile"
 	"p7zip"
 	"pavucontrol"
+	"picom"
 	"pluma"
 	"poppler"
 	"projectm"
@@ -82,6 +84,7 @@ declare -a PACKAGES=(
 	"python-virtualenv"
 	"qemu"
 	"qemu-arch-extra"
+	"qt5ct"
 	"redshift"
 	"ripgrep"
 	"rofi"
@@ -89,6 +92,7 @@ declare -a PACKAGES=(
 	"shellcheck"
 	"speedcrunch"
 	"steam"
+	"terminus-font"
 	"thunderbird"
 	"tmux"
 	"transmission-gtk"
@@ -106,7 +110,6 @@ declare -a PACKAGES=(
 	"xbindkeys"
 	"xclip"
 	"xcursor-vanilla-dmz-aa"
-	"xcompmgr"
 	"xorg-server"
 	"xorg-setxkbmap"
 	"xorg-xbacklight"
@@ -228,5 +231,3 @@ while true; do
         * ) echo "Please type [Y/y] yes or [N/n] no.";;
     esac
 done
-
-
