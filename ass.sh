@@ -89,7 +89,6 @@ declare -a PACKAGES=(
 	"redshift"
 	"ripgrep"
 	"rofi"
-	"scrot"
 	"shellcheck"
 	"speedcrunch"
 	"steam"
@@ -201,8 +200,13 @@ function configure_user () {
     systemctl --user start pulseaudio
     pactl set-sink-mute @DEFAULT_SINK@ toggle
     pactl -- set-sink-volume @DEFAULT_SINK@ 80%
-    ssh-agent -c
-    ssh-add /backup/.keys/"$USER_NAME"_gitlab_com_ed25519
+    #ssh-agent -c
+	systemctl --user enable gpg-agent.socket 
+	systemctl --user enable gpg-agent-extra.socket
+	systemctl --user enable gpg-agent-browser.socket
+	systemctl --user enable gpg-agent-ssh.socket
+	systemctl --user enable dirmngr.socket
+    ssh-add /backup/.keys/qwertzy-antonio-godinho-github.com
     mkdir -p ~/.wine
 }
 
