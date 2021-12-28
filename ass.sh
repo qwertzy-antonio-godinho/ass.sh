@@ -114,7 +114,6 @@ declare -a PACKAGES=(
 	"xorg-setxkbmap"
 	"xorg-xbacklight"
 	"xorg-xdm"
-	"xorg-xinit"
 	"xsel"
 	"youtube-dl"
 	"zenity"
@@ -130,7 +129,6 @@ declare -a ABS=(
 	"eduke32"
     "fittstool"
 	"gzdoom"
-    "netwmpager"
 	"netdiscover"
 	"q4wine"
 	"retroarch-git"
@@ -184,6 +182,7 @@ function process_abs () {
 function configure_system () {
     printf "\nConfiguring system...\n"
     sudo cp -r -v "${PROJECT_ROOT}"/etc/* /etc/
+    sudo cp -r -v "${PROJECT_ROOT}"/usr/* /usr/
     sudo systemctl enable xdm
     sudo systemctl enable bluetooth
     sudo systemctl enable ufw
