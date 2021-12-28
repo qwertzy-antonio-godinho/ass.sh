@@ -202,10 +202,6 @@ function configure_user () {
     pactl -- set-sink-volume @DEFAULT_SINK@ 80%
     #ssh-agent -c
 	systemctl --user enable gpg-agent.socket 
-	systemctl --user enable gpg-agent-extra.socket
-	systemctl --user enable gpg-agent-browser.socket
-	systemctl --user enable gpg-agent-ssh.socket
-	systemctl --user enable dirmngr.socket
     ssh-add /backup/.keys/qwertzy-antonio-godinho-github.com
     mkdir -p ~/.wine
 }
