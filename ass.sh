@@ -201,7 +201,8 @@ function configure_user () {
     systemctl --user start pulseaudio
     pactl set-sink-mute @DEFAULT_SINK@ toggle
     pactl -- set-sink-volume @DEFAULT_SINK@ 80%
-    eval $(ssh-agent) 
+    eval $(ssh-agent)
+	ssh-keyscan -t Ed25519 github.com >> ~/.ssh/known_hosts
     ssh-add /backup/.keys/qwertzy-antonio-godinho-github.com
 }
 
