@@ -50,6 +50,7 @@ declare -a PACKAGES=(
 	"lib32-openal"
 	"lib32-sdl2"
 	"libjpeg6-turbo"
+	"links"
 	"linux$LTS_SUPPORT"
 	"linux$LTS_SUPPORT-headers"
 	"mate-polkit"
