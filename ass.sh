@@ -218,7 +218,7 @@ printf "\n${SCRIPT_NAME} - Automated System Setup\n"
 check_previleges
 update_system
 process_pacman
-#install_yay
+install_yay
 #process_abs
 configure_system
 configure_user
