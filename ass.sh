@@ -111,7 +111,6 @@ declare -a PACKAGES=(
 )
 
 declare -a ABS=(
-	"abook"
 	"audacious-gtk3"
 	"audacious-plugins-gtk3"
     "aic94xx-firmware"
