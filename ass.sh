@@ -122,6 +122,7 @@ declare -a ABS=(
 	# "eduke32"
 	# "gzdoom"
 	"netdiscover"
+	"pass-coffin"
 	"retroarch-git"
 	"skippy-xd-git"
     "ttf-ms-fonts"
