@@ -52,6 +52,7 @@ declare -a PACKAGES=(
 	"mpv"
 	"ncdu"
 	"network-manager-applet"
+	"newsboat"
 	"ntfs-3g"
 	"nvidia$LTS_SUPPORT"
 	"nvidia-settings"
