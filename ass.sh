@@ -194,6 +194,10 @@ function configure_user () {
     pactl set-sink-mute @DEFAULT_SINK@ toggle
     pactl -- set-sink-volume @DEFAULT_SINK@ 80%
     eval $(ssh-agent)
+	systemctl --user enable gpg-agent.socket
+	mkdir -p ~/.gnupg && chmod 700 ~/.gnupg
+	gpg --import /backup/.keys/privkey.asc
+	gpg --import /backup/.keys/public.key
 	ssh-keyscan -t Ed25519 github.com > ~/.ssh/known_hosts
     ssh-add /backup/.keys/qwertzy-antonio-godinho-github.com
 }
