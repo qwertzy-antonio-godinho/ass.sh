@@ -14,7 +14,7 @@ declare -a PACKAGES=(
 	"blueman"
 	"bluez"
 	"bluez-libs"
-	"brasero"
+#	"brasero"
 	"caja"
 	"conky"
 	"curl"
@@ -29,7 +29,7 @@ declare -a PACKAGES=(
 	"fluxbox"
 	"fzf"
 	"geoclue"
-	"gimp"
+#	"gimp"
 	"git"
 	"gnupg"
 	"gparted"
@@ -88,7 +88,6 @@ declare -a PACKAGES=(
 	"speedcrunch"
 	"steam"
 	"terminus-font"
-	"thunderbird"
 	"tmux"
 	"transmission-gtk"
 	"tree"
@@ -195,7 +194,7 @@ function configure_user () {
     pactl set-sink-mute @DEFAULT_SINK@ toggle
     pactl -- set-sink-volume @DEFAULT_SINK@ 80%
     eval $(ssh-agent)
-	ssh-keyscan -t Ed25519 github.com >> ~/.ssh/known_hosts
+	ssh-keyscan -t Ed25519 github.com > ~/.ssh/known_hosts
     ssh-add /backup/.keys/qwertzy-antonio-godinho-github.com
 }
 
@@ -211,7 +210,7 @@ check_previleges
 update_system
 process_pacman
 install_yay
-#process_abs
+process_abs
 configure_system
 configure_user
 cleanup
