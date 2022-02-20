@@ -31,6 +31,7 @@ declare -a PACKAGES=(
 	"geoclue"
 #	"gimp"
 	"git"
+	"gnome-keyring"
 	"gnupg"
 	"gparted"
 	"gsimplecal"
