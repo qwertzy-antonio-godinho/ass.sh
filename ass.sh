@@ -72,7 +72,7 @@ declare -a PACKAGES=(
 	"rxvt-unicode"
 	"speedcrunch"
 	"steam"
-	"tint2"
+	"stalonetray"
 	"tmux"
 	"tree"
 	"thunderbird"
