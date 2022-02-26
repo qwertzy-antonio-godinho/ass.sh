@@ -174,7 +174,7 @@ function configure_user () {
 	mkdir -p ~/.gnupg && chmod 700 ~/.gnupg
 	gpg --import /backup/.keys/privkey.asc
 	gpg --import /backup/.keys/public.key
-	ssh-keyscan -t Ed25519 github.com > ~/.ssh/known_hosts
+	touch ~/.ssh/known_hosts && ssh-keyscan -t Ed25519 github.com > ~/.ssh/known_hosts
     ssh-add /backup/.keys/qwertzy-antonio-godinho-github.com
 }
 
