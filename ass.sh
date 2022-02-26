@@ -22,7 +22,6 @@ declare -a PACKAGES=(
 	"ffmpegthumbnailer"
 	"fluxbox"
 	"fzf"
-	"geoclue"
 	"git"
 	"gnome-keyring"
 	"gnupg"
