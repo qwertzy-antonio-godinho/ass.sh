@@ -78,6 +78,7 @@ declare -a PACKAGES=(
 	"thunderbird"
 	"unrar"
 	"unzip"
+	"unclutter"
 	"virt-manager"
 	"vkd3d"
 	"vnstat"
