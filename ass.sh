@@ -100,6 +100,7 @@ declare -a ABS=(
     "aic94xx-firmware"
     "brave-bin"
 	"fittstool"
+	"lib32-nvidia-utils"
 	"pass-coffin"
 	"skippy-xd-git"
 	"visual-studio-code-bin"
