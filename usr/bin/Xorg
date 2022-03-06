@@ -1,7 +1,7 @@
 #!/bin/sh
 
 DPI_TV=102
-DPI_MONITOR=96
+DPI_MONITOR=172
 
 if [[ $(xrandr | awk -v monitor="HDMI-0" '/connected/ {p = 0} $0 ~ monitor {p = 1} p'  | grep "primary" | wc -l) -gt 0 ]]; then
 	sed -i -E 's/-dpi .([0-9]+)/-dpi '$DPI_TV'/' /etc/X11/xdm/Xservers
