@@ -26,7 +26,6 @@ declare -a PACKAGES=(
 	"gnupg"
 	"gsimplecal"
 	"gufw"
-	"hsetroot"
 	"htop"
 	"jq"
 	"linux$LTS_SUPPORT"
