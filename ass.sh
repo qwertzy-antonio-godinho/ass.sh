@@ -21,12 +21,14 @@ declare -a PACKAGES=(
 	"eom"
 	"ffmpegthumbnailer"
 	"fzf"
+	"fluxbox"
 	"git"
 	"gnome-keyring"
 	"gnupg"
 	"gsimplecal"
 	"gufw"
 	"htop"
+	"hsetroot"
 	"jq"
 	"linux$LTS_SUPPORT"
 	"linux$LTS_SUPPORT-headers"
@@ -73,12 +75,8 @@ declare -a PACKAGES=(
 	"redshift"
 	"ripgrep"
 	"rofi"
-	"rxvt-unicode"
-	"speedcrunch"
 	"steam"
-	"stalonetray"
 	"tmux"
-	"tint2"
 	"tree"
 	"thunderbird"
 	"unrar"
@@ -90,7 +88,7 @@ declare -a PACKAGES=(
 	"vkd3d"
 	"vnstat"
 	"volumeicon"
-	"wmctrl"
+#	"wmctrl"
 	"xbindkeys"
 	"xclip"
 	"xcursor-vanilla-dmz-aa"
@@ -99,6 +97,7 @@ declare -a PACKAGES=(
 	"xorg-xbacklight"
 	"xorg-xdm"
 	"xsel"
+	"xterm"
 	"youtube-dl"
 	"yad"
 )
@@ -106,7 +105,6 @@ declare -a PACKAGES=(
 declare -a ABS=(
     "aic94xx-firmware"
     "brave-bin"
-	"compiz"
 	"pass-coffin"
 	"visual-studio-code-bin"
     "wd719x-firmware"
@@ -181,7 +179,7 @@ function configure_user () {
 	mkdir -p ~/.gnupg && chmod 700 ~/.gnupg
 	gpg --import /backup/.keys/privkey.asc
 	gpg --import /backup/.keys/public.key
-	touch ~/.ssh/known_hosts && ssh-keyscan -t Ed25519 github.com > ~/.ssh/known_hosts
+	mkdir -p ~/.ssh && touch ~/.ssh/known_hosts && ssh-keyscan -t Ed25519 github.com > ~/.ssh/known_hosts
     ssh-add /backup/.keys/qwertzy-antonio-godinho-github.com
 }
 
