@@ -62,6 +62,7 @@ declare -a PACKAGES=(
 	"p7zip"
 	"pass"
 	"pavucontrol"
+	"picom"
 	"pluma"
 	"projectm"
 	"projectm-pulseaudio"
