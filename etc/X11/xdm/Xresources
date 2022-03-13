@@ -8,7 +8,7 @@ xlogin.Login.foreground:grey
 xlogin.Login.failColor:red
 xlogin.Login.inpColor:black
 xlogin.Login.promptColor:green
-xlogin.Login.width:400
+xlogin.Login.width:500
 xlogin.Login.greetFont:-*-monospace-*-*-*-14-*-*-*-*-*-*-*
 xlogin.Login.font:-*-monospace-*-*-*-10-*-*-*-*-*-*-*
 xlogin.Login.promptFont:-*-monospace-*-*-*-14-*-*-*-*-*-*-*
