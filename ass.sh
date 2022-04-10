@@ -76,6 +76,7 @@ declare -a PACKAGES=(
 	"redshift"
 	"ripgrep"
 	"rofi"
+	"solaar"
 	"steam"
 	"tmux"
 	"tree"
